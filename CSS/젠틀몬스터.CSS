@@ -1,0 +1,135 @@
+@charset "utf=8";
+@font-face {
+    font-family: 'D2Coding';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24ClassicType-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.section{
+    width: 1280px;
+    margin: 30px auto;
+    background-color:#ffffff;
+}
+.section01 .title h1{
+    font-size: 125px;
+    text-align: center;
+    font-family: 'Cafe24ClassicType-Regular';
+}
+.section01 .title-img{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.section01 .title-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 650px;
+}
+.section01 .title-img .text{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.61);
+    position: absolute;
+    bottom:  0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    transform: translateY(100%);
+    transition: 0.8s;
+    display: flex;
+    flex-direction: column;
+    /* 가로 에서 중앙으로 맞춰준다. */
+    height: 100%;
+    justify-content: center;
+    font-size: 30px;
+    
+}
+.section01 .title-img:hover .text{
+    transform: translateY(0%);
+} 
+
+.section01 .title-img:hover .text h2{
+    margin-bottom: 40px;
+    font-family: 'D2Coding';
+}
+.section01 .title-img:hover .text p{
+    font-size: 25px;
+}
+
+.section02{
+    margin-top: 95px;
+}
+.section02 .item_list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.section02 .item_list .item img{
+    background-color: f3f4f6;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.section02 .item_list .item .BEST{
+    background-color: #6765654f;
+    width: 82px;
+    height: 29px;
+    text-align: center;
+    line-height: 29px;
+    position: absolute;
+    top:  0;
+    font-size: 18px;
+}
+
+.section02 .item_list .item h2{
+    
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+
+.section02 .item_list .item p{
+  
+    margin-bottom: 50px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section02 .item_list .item a{
+    margin-bottom: 37px;
+    color: #810000;
+    font-size: 16px;             
+}
+
+.more{
+    background-color: rgba(0, 0, 0, 0.637);
+    color: aliceblue;
+    width: 180px;
+    height: 40px ;
+    text-align: center;
+    line-height: 40px;
+    margin: 50px auto;
+}
+
